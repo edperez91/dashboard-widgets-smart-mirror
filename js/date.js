@@ -3,7 +3,7 @@ Static Data
 ************/
 const allTheMonths = [
   "January",
-  "Febuary",
+  "February",
   "March",
   "April",
   "May",
@@ -19,7 +19,7 @@ const allTheDays = [
   "Sunday",
   "Monday",
   "Tuesday",
-  "Wedsday",
+  "Wednesday",
   "Thursday",
   "Friday",
   "Saturday"
