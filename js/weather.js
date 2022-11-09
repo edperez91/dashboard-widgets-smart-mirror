@@ -1,5 +1,5 @@
 // API key. Replace with your API key
-const APIKEY = 'f2f85762267ef18d0df71e18ec9f3737';
+const APIKEY = 'e05ec5a23c8bbd217673c10f7d07a236';
 // City
 const city = 'Spokane';
 // Units for Farenheit
