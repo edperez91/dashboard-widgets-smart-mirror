@@ -1,68 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: rgb(255, 255, 255);
+}
 /* Grid */
 .layout {
   /* Set your own grid   */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px;
-  grid-column-gap: 1em;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "times . weathers"
+    "dates . .";
+  justify-items: stretch;
+  align-items: start;
+  color: whitesmoke;
 }
 
 /* Widgets */
 section {
-  background: lightgray;
+  background: #05116c5f;
   padding: 1em;
-  
+  font-family: "Barlow";
+  box-shadow: 5px 5px 20px 6px lightblue;
+
   /* Relative Parent. Absolute Child */
   position: relative;
 }
 
 /* Time */
 .time {
+  text-align: center;
 }
 
-.hours {
-}
+.hours {}
 
-.minutes {
-}
+.minutes {}
 
-.seconds {
-}
+.seconds {}
 
 .amOrPM {
-  
+  font-size: 0.5em;
+  font-weight: 700;
 }
 
 /* Date */
 .date {
-  
+  text-align: center;
 }
 
 .month {
+  grid-area: month;
 }
 
 .dayOfMonth {
+  grid-area: dayOfMonth;
 }
 
 .year {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-area: year;
 }
 
 .dayOfWeek {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-area: dayOfWeek;
 }
 
 /* Weather */
-.weather {
-  
-}
+.weather {}
 
 .city {
-  
+  display: flex;
+  font-size: 2em;
+  justify-self: center;
+  align-self: center;
+  grid-area: city;
+
 }
 
 .temp {
-  
+  display: flex;
+  font-size: 3em;
+  justify-self: center;
+  align-self: center;
+  grid-area: temp;
 }
 
-.weather img {
-  
+.weather img {}
+
+.weathers {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "city city city"
+    "temp temp temp"
+    "img img img";
+  justify-self: end;
+  align-self: start;
+  grid-area: weathers;
+}
+
+.times {
+  display: flex;
+  justify-self: start;
+  grid-area: times;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.dates {
+  display: flex;
+
+  grid-area: dates;
+  font-size: 2em;
+  font-weight: 700;
+  grid-template-columns: 1.5fr .5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "month dayOfMonth"
+    "year year"
+    "dayOfWeek dayOfWeek";
+}
+
+.img {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  grid-area: img;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 100;
 }

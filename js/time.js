@@ -27,11 +27,11 @@ const gotAmOrPM = gotHours >= 12 ? 'PM' : 'AM';
 // Get 12 hour format
 gotHours = gotHours % 12 || 12;
 // Optionally, append zero to single digit hours
-gotHours = gotHours < 10 ? `0${gotHours}` : gotHours;   
+//gotHours = gotHours < 10 ? `0${gotHours}` : gotHours;   
 // Optionally, append zero to single digit minutes
 gotMinutes = gotMinutes < 10 ? `0${gotMinutes}` : gotMinutes;
 // Optionally, append zero to single digit seconds
-gotSeconds = gotSeconds < 10 ? `0${gotSeconds}` : gotSeconds;
+//gotSeconds = gotSeconds < 10 ? `0${gotSeconds}` : gotSeconds;
 
 /************
 Get DOM Elements
@@ -53,7 +53,7 @@ hours.innerText = gotHours;
 // Set the minutes
 minutes.innerText = gotMinutes;
 // Set the seconds
-seconds.innerText = gotSeconds;
+//seconds.innerText = gotSeconds;
 // Set AM or PM
 amOrPM.innerText = gotAmOrPM;
   
